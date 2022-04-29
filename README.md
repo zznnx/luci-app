@@ -8,7 +8,7 @@ luci for [luci-app](https://github.com/zznnx/luci-app)
 ```shell
 echo >> feeds.conf.default
 echo 'src-git luci_app https://github.com/zznnx/luci-app.git;main' >> feeds.conf.default
-./scripts/feeds update nas luci_app
+./scripts/feeds update luci_app
 ./scripts/feeds install -a -p luci_app
 ```
 
