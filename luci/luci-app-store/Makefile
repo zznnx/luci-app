@@ -27,7 +27,7 @@ PKG_MAINTAINER:=jjm2473 <jjm2473@gmail.com>
 TARGET_CONFIGURE_OPTS= FRONTEND_DIST="$(BUILD_DIR)/istore-ui-$(ISTORE_UI_VERSION)-$(ISTORE_UI_RELEASE)/app-store-ui/src/dist" APP_STORE_VERSION="$(PKG_VERSION)"
 TARGET_CONFIGURE_OPTS+= SED="$(SED)"
 
-define Package/luci-app-store/conffiles
+define $(TOPDIR)/feeds/luci_app/luci/luci-app-store/conffiles
 /etc/.app_store.id
 endef
 
