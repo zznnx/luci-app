@@ -119,4 +119,4 @@ define $(TOPDIR)/feeds/luci_app/luci/$(PKG_NAME)/install
 	$(CP) $(PKG_BUILD_DIR)/luasrc/* $(1)/usr/lib/lua/luci/
 endef
 
-$(eval $(call BuildPackage,$(PKG_NAME)))
+$(eval $(call BuildPackage,$(TOPDIR)/feeds/luci_app/luci/$(PKG_NAME)))
